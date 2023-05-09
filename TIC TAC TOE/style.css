@@ -1,0 +1,140 @@
+
+
+body {
+  width: 100%;
+  height: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    76deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(252, 255, 90, 1) 0%,
+    rgba(255, 37, 243, 1) 100%
+  );
+  background-repeat: repeat-y;
+  background-size: cover; /* Establece el tamaño de la gradiente al tamaño de la ventana del navegador */
+}
+
+.text {
+    position: absolute;
+    margin-left: 45%;
+    /* background-color: rgba(0, 0, 0, 0.233); */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 450px;
+    width: 750px;
+  }
+
+.text h2 {
+    display: block;
+    color: white;
+    background-color: grey;
+    font-size: 100px;
+    margin-bottom: 0;
+    margin-top: 50px;
+    font-family: Helvetica;
+  }
+
+.text p {
+    display: inline-block;
+    /*background-color: rgba(192, 192, 192, 0.562);*/ 
+    font-size: 50px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+.text button{
+  cursor: pointer;
+  background-color: rgba(0, 255, 255, 0);
+  color: white;
+  height: 50px;
+  width: 150px;
+  font-size: 30px;
+  font-family: Helvetica;
+  margin-top: 20px;
+  border-color: white;
+  border: 3px solid;
+}
+.text button:hover{
+  transform: scale(1.1);
+  margin-bottom: -7px;
+  margin-left: 7px;
+  transition: 0.4s;
+}
+.text button:active{
+  transform: scale(1);
+  transition: 0.4s;
+}
+
+.container{
+    position: absolute;
+    display: flex;
+    /*background-color: rgba(0, 0, 0, 0.267);*/
+    width: 500px;
+    height: 500px;
+    margin-top: 10%;
+    margin-left: 10%;
+    border-radius: 5%;
+    align-items: center; /* Para centrar verticalmente los elementos dentro del contenedor */
+    justify-content: center; /* Para centrar horizontalmente los elementos dentro del contenedor */
+    flex-wrap: wrap; /* Para que los elementos se ajusten al ancho del contenedor */
+  }
+  
+.container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc((100% / 3) - 30px);
+    height: calc((100% / 3) - 30px);
+    background-color: white;
+    margin: 15px;
+    border-radius: 10%;
+    -webkit-box-shadow: 10px 10px 18px 2px rgba(0,0,0,0.29);
+    -moz-box-shadow: 10px 10px 18px 2px rgba(0,0,0,0.29);
+    box-shadow: 10px 10px 18px 2px rgba(0,0,0,0.29);
+    cursor: pointer;
+  }
+
+.cell p{
+  position: absolute;
+  z-index: 1;
+  font-size: 20px;
+  transform: scale(4.5);
+  color: rgb(2, 207, 207);
+}
+
+.cell:active{
+    background-color: rgb(32, 203, 255);
+    transform: scale(0.95);
+    transition: 0.3s;
+}
+
+.cell.shrink {
+  transform: scale(0.95);
+  transition: transform 0.4s ease;
+}
+
+#WinLoseMsg{
+  position: absolute;
+  display: none;
+  place-content: center;
+  width: 30%;
+  height: 10%;
+  left: 35%;
+  top: 5%;
+  background-color: rgba(0, 0, 0, 0.589);
+  border-radius: 15px;
+  ;
+}
+
+#WinLoseMsg p{
+ position: relative;
+ z-index: 2;
+ margin-top: 12px;
+ text-align: center;
+ font-size: 60px;
+ color: rgb(1, 253, 1);
+}
+
+  
+  
