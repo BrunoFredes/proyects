@@ -13,7 +13,14 @@ html {
   background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
+body{
+  margin: 0;
+  padding: 0;
+}
+.allPage{
+  height: 100vh;
+  width: 100%;
+}
 .text {
     position: absolute;
     margin-left: 45%;
@@ -77,8 +84,8 @@ html {
   /*background-color: rgba(0, 0, 0, 0.267);*/
   width: 50vh;
   height: 50vh;
-  margin-top: 10%;
-  margin-left: 10%;
+  top: 24%;
+  left: 15%;
   border-radius: 5%;
   align-items: center; /* Para centrar verticalmente los elementos dentro del contenedor */
   justify-content: center; /* Para centrar horizontalmente los elementos dentro del contenedor */
@@ -121,6 +128,7 @@ html {
   position: absolute;
   display: none;
   place-content: center;
+  text-align: center;
   width: 30%;
   height: 10%;
   left: 35%;
@@ -139,15 +147,62 @@ html {
  color: rgb(1, 253, 1);
 }
 
-  
-/* @media (max-width: 768px) {
+
+@media (max-width: 1478px) {
   .container {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
- 
-  }
-  .text {
-    margin-top: 20%;
-  }
-} */
+  left: 5%;
+}
+.text{
+  transform: scale(0.7);
+  top: 20%;
+}
+#WinLoseMsg{
+  left: 38%;
+}
+}
+@media (max-width: 770px) {
+  .container {
+  left: 23%;
+  top: 5%;
+  transform: scale(0.8);
+}
+.text{
+  transform: scale(0.8);
+  top: 45%;
+  margin-left: 0;
+  left: 10%;
+}
+#WinLoseMsg{
+  left: 38%;
+}
+}
+@media (max-width: 425px) {
+  .container {
+  left: 0%;
+  top: 10%;
+  transform: scale(0.75);
+}
+.text button{
+  cursor: pointer;
+  background-color: rgba(0, 255, 255, 0);
+  color: white;
+  height: 100px;
+  width: 300px;
+  margin-left: 18%;
+  font-size: 30px;
+  font-family: Helvetica;
+  margin-top: 20px;
+  border-color: white;
+  border: 3px solid;
+}
+
+.text{
+  transform: scale(0.6);
+  top: 45%;
+  margin-left: -35%;
+}
+#WinLoseMsg{
+  left: 38%;
+}
+
+}
