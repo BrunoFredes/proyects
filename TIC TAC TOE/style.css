@@ -1,6 +1,8 @@
 
 
 html {
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -16,6 +18,9 @@ html {
 body{
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 .allPage{
   height: 100vh;
@@ -23,16 +28,16 @@ body{
 }
 .text {
     position: absolute;
-    margin-left: 45%;
+    left: 45%;
     /* background-color: rgba(0, 0, 0, 0.233); */
     top: 50%;
     transform: translateY(-50%);
     height: 450px;
-    width: 750px;
+    width: 630px;
   }
 
 .text h2 {
-    display: block;
+    display: inline-block;
     color: white;
     /* background-color: grey; */
     font-size: 100px;
@@ -155,22 +160,58 @@ body{
 .text{
   transform: scale(0.7);
   top: 20%;
+  right: 10%;
+}
+#WinLoseMsg{
+  left: 38%;
+}
+
+}
+@media (max-width: 1014px) {
+  .container {
+    left: 50%;
+    top: 40%;
+    width: 40vh;
+    height: 40vh;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+.cell p{
+  font-size: 1.8vh;
+}
+.text{
+  transform: scale(0.6);
+  top: 50%;
+  margin-left: 0;
+  display: block;
+  left: 10%;
+  margin: 0 auto;
+ 
 }
 #WinLoseMsg{
   left: 38%;
 }
 }
-@media (max-width: 770px) {
+@media (max-width: 804px) {
   .container {
-  left: 23%;
-  top: 5%;
-  transform: scale(0.8);
+    left: 50%;
+    top: 40%;
+    width: 40vh;
+    height: 40vh;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+.cell p{
+  font-size: 1.8vh;
 }
 .text{
-  transform: scale(0.8);
-  top: 45%;
+  transform: scale(0.6);
+  top: 50%;
   margin-left: 0;
+  display: block;
+  width: 100vh;
   left: 10%;
+ 
 }
 #WinLoseMsg{
   left: 38%;
@@ -178,7 +219,7 @@ body{
 }
 @media (max-width: 425px) {
   .container {
-  left: 0%;
+  left: -03%;
   top: 10%;
   transform: scale(0.75);
 }
@@ -197,9 +238,39 @@ body{
 }
 
 .text{
-  transform: scale(0.6);
+  transform: scale(0.5);
   top: 45%;
   margin-left: -35%;
+}
+#WinLoseMsg{
+  left: 38%;
+}
+
+}
+@media (max-width: 375px) {
+  .container {
+  left: 5%;
+  top: 5%;
+  transform: scale(0.75);
+}
+.text button{
+  cursor: pointer;
+  background-color: rgba(0, 255, 255, 0);
+  color: white;
+  height: 100px;
+  width: 300px;
+  margin-left:25%;
+  font-size: 30px;
+  font-family: Helvetica;
+  margin-top: 20px;
+  border-color: white;
+  border: 3px solid;
+}
+
+.text{
+  transform: scale(0.5);
+  top: 35%;
+  margin-left: -45%;
 }
 #WinLoseMsg{
   left: 38%;
