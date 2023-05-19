@@ -1,11 +1,80 @@
-*{
+* {
     padding: 0;
     margin: 0;
-}
-body{
+    box-sizing: border-box;
+  }
+  
+  body {
     background-image: url(https://cutewallpaper.org/28/cool-simplestic-wallpaper/85320882.jpg);
     background-size: cover;
     background-position: center center center;
     background-repeat: no-repeat;
-}
-
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    min-height: 100vh; /* Ensure full viewport height */
+  }
+  
+  .calculator {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #2b2b2b60;
+    border: 1.4px solid #7c7c7c;
+    padding: 10px;
+    border-radius: 3%;
+  }
+  
+  .calculator input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.473);
+  }
+  
+  .calculator .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .calculator .row:nth-child(1) button:nth-child(2),
+  .calculator .row:nth-child(2) button:nth-child(2),
+  .calculator .row:nth-child(3) button:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .calculator button {
+    width: 32%;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #c2c2c2;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .calculator button.operator {
+    background-color: #ffa726;
+    color: #ffffff;
+  }
+  
+  .calculator button.equal {
+    background-color: #4caf50;
+    color: #ffffff;
+  }
+  
+  .calculator button.clear {
+    background-color: #e53935;
+    color: #ffffff;;
+  }
+  #result{
+    color: rgb(255, 255, 255);
+  }
+  @media (max-width: 768px) {
+    .calculator {
+      max-width: 300px;
+    }
+  }
+  
