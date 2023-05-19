@@ -5,7 +5,7 @@
   }
   
   body {
-    background-image: url(https://cutewallpaper.org/28/cool-simplestic-wallpaper/85320882.jpg);
+    background-image: url(https://wallpaperaccess.com/full/2904239.jpg);
     background-size: cover;
     background-position: center center center;
     background-repeat: no-repeat;
@@ -17,12 +17,14 @@
   }
   
   .calculator {
-    max-width: 300px;
+    max-width: 260px;
     margin: 0 auto;
-    background-color: #2b2b2b60;
+    background-color: #ffffff2c;
     border: 1.4px solid #7c7c7c;
     padding: 10px;
     border-radius: 3%;
+    transform: scale(1.34);
+    backdrop-filter: blur(10px);
   }
   
   .calculator input[type="text"] {
@@ -31,6 +33,7 @@
     padding: 10px;
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.473);
+    
   }
   
   .calculator .row {
@@ -50,31 +53,56 @@
     margin-bottom: 5px;
     padding: 10px;
     font-size: 18px;
-    background-color: #c2c2c2;
-    border: none;
+    background-color: #ffffffa8;
+    border: 1px solid rgb(88, 88, 88);
     cursor: pointer;
+    border-radius: 12%;
   }
   
   .calculator button.operator {
-    background-color: #ffa726;
+    background-color: #ecab49de;
     color: #ffffff;
   }
   
   .calculator button.equal {
-    background-color: #4caf50;
+    background-color: #72fd77b7;
     color: #ffffff;
   }
   
   .calculator button.clear {
     background-color: #e53935;
     color: #ffffff;;
+    margin-left: 34%;
+  }
+  .calculator button:hover{
+    background-color: white;
+    transition: 0.3s;
+  }
+  .calculator button.equal:hover{
+    background-color: #9dffa0;
+    transition: 0.3s;
+  }
+  .calculator button.clear:hover{
+    background-color: #ff524f;
+    transition: 0.3s;
+  }
+  .calculator button.operator:hover{
+    background-color: #ebb057;
+    transition: 0.3s;
+  }
+  .calculator button:active{
+    /*nose que poner aqui*/
+    transform: scale(0.9);
+    transition: 0.2s;
   }
   #result{
     color: rgb(255, 255, 255);
   }
-  @media (max-width: 768px) {
+  @media (max-width: 328px) {
     .calculator {
       max-width: 300px;
+      transform: scale(0.8);
+      margin-right: 10%;
     }
   }
   
