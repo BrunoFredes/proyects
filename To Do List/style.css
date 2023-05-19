@@ -8,10 +8,4 @@ body{
     background-position: center center center;
     background-repeat: no-repeat;
 }
-body div{
-    height: 240px;
-    width: 250px;
-    background-color: rgba(255, 255, 255, 0.747);
-    display: flex;
 
-}
